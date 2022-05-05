@@ -1,0 +1,17 @@
+/* Mobile First Resume Styling */
+
+#resume {
+  margin-block: 2%;
+  display: block;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 769px) {
+
+  #resume {
+    margin-block: 3%;
+    display: block;
+    margin-inline: auto;
+  }
+
+}
