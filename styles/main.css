@@ -1,0 +1,59 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* General Desktop Styling */
+
+@media screen and (min-width: 769px) {
+
+  header {
+    border-bottom: 0.2rem solid black;
+    padding-block: 1%;
+    padding-inline-start: 1%;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+    letter-spacing: 0.3rem;
+    font-size: calc(1rem + 1.5vw);
+    text-transform: uppercase;
+  }
+  
+  header nav a {
+    text-decoration: none;
+  }
+  
+  header nav a:link,
+  header nav a:visited {
+    color: black;
+  }
+  
+  header nav a:hover {
+    filter: contrast(20%) drop-shadow(0.2rem 0.2rem 0.1rem lightcyan);
+  }
+  
+  header nav a:active {
+    filter: contrast(20%);
+  }
+  
+  header nav a:first-child  {
+    flex: 2;
+  }
+  
+  header nav a:nth-child(n+2):nth-child(-n+3) {
+    flex: 0.8;
+  }
+  
+  header nav .logo {
+    max-width: 100%;
+  }
+
+}
