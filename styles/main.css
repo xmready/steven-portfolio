@@ -90,14 +90,14 @@ header a.mobile {
 #hamburger-menu #sidebar-menu {
   visibility: hidden;
   width: 80vw;
-  height: 100vh;
+  height: 100%;
   transition: 0.1s;
   position: fixed;
   top: 0;
   left: 0;
-  line-height: calc(1rem + 14vw);
+  line-height: calc(1rem + 10vw);
   background-color: #fff;
-  font-size: calc(1rem + 4vw);
+  font-size: calc(1rem + 3.5vw);
   text-align: left;
   padding-inline-start: 10%;
   border: 1px solid black;
@@ -142,29 +142,33 @@ a:active {
     padding-block: 1%;
   }
 
+  #main-menu div {
+    display: flex;
+  }
+
   #main-menu ul {
+    flex: 1;
+    margin-block: 0;
+  }
+
+  #main-menu .logo {
+    max-width: 70%;
+    display: block;
+  }
+
+  #main-menu ul:nth-child(2) {
     font-size: calc(1rem + 1.5vw);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    width: 70%;
-    margin-block: 0;
+    justify-content: flex-end;
   }
-  
-  #main-menu li:first-child  {
-    flex: 2;
-  }
-  
-  #main-menu li:nth-child(n+2):nth-child(-n+3) {
-    flex: 0.8;
+
+  #main-menu ul:nth-child(2) li {
+    padding-inline-start: 6%;
   }
   
   #main-menu li a {
     display: block;
-  }
-
-  #main-menu .logo {
-    max-width: 100%;
   }
 
   .desktop {
