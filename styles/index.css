@@ -1,0 +1,24 @@
+/* index.html Styling */
+
+#profile-pic {
+  display: block;
+  padding-block-end: 2%;
+  margin-inline: auto;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  
+  #statement {
+    padding-block-start: 1%;
+  }
+
+  #profile-pic {
+    display: block;
+    padding-block-start: 2%;
+    padding-block-end: 3%;
+    margin-inline: auto;
+    max-width: 90%;
+  }
+
+}
