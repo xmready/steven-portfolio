@@ -1,3 +1,41 @@
+/* Custom Fonts */
+
+@font-face {
+    font-family: 'vollkorn_sc';
+    src: url('../fonts/vollkornsc-black-webfont.woff2') format('woff2'),
+         url('../fonts/vollkornsc-black-webfont.woff') format('woff');
+    font-weight: black;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vollkorn_sc';
+    src: url('../fonts/vollkornsc-bold-webfont.woff2') format('woff2'),
+         url('../fonts/vollkornsc-bold-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vollkorn_sc';
+    src: url('../fonts/vollkornsc-regular-webfont.woff2') format('woff2'),
+         url('../fonts/vollkornsc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'vollkorn_sc';
+    src: url('../fonts/vollkornsc-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/vollkornsc-semibold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
 /* Mobile First General Styling */
 
 html {
@@ -14,6 +52,9 @@ img {
 }
 
 header {
+  font-family: vollkorn_sc, serif;
+  font-weight: bold;
+  font-style: normal;
   display: flex;
   justify-content: space-between;
   border-bottom: 0.1rem solid black;
@@ -98,16 +139,16 @@ a:active {
 
   header {
     display: revert;
-    padding-block: 0;
+    padding-block: 1%;
   }
 
   #main-menu ul {
-    font-family: serif;
     font-size: calc(1rem + 1.5vw);
     display: flex;
     align-items: center;
     justify-content: flex-start;
     width: 70%;
+    margin-block: 0;
   }
   
   #main-menu li:first-child  {
@@ -118,6 +159,10 @@ a:active {
     flex: 0.8;
   }
   
+  #main-menu li a {
+    display: block;
+  }
+
   #main-menu .logo {
     max-width: 100%;
   }
