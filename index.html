@@ -15,10 +15,27 @@
   <body>
 
     <header>
-      <nav>
-        <a href="index.html"><img class="logo" src="images/Steven-Cobilich-Logo.png" /></a>
-        <a href="work.html">work</a>
-        <a href="resume.html">resume</a>
+
+      <a class="mobile" href="index.html"><img class="logo" src="images/Steven-Cobilich-Logo.png" /></a>
+      
+      <input type="checkbox" id="hamburger-input" class="mobile" />
+
+      <label class="mobile" id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="work.html">work</a></li>
+            <li><a href="resume.html">resume</a></li>
+          </ul>
+        </nav>
+      </label>
+
+      <nav class="desktop" id="main-menu">
+        <ul>
+          <li><a href="index.html"><img class="logo" src="images/Steven-Cobilich-Logo.png" /></a></li>
+          <li><a href="work.html">work</a></li>
+          <li><a href="resume.html">resume</a></li>
+        </ul>
       </nav>
     </header>
 
