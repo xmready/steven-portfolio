@@ -1,3 +1,5 @@
+/* Mobile First General Styling */
+
 html {
   font-size: 10px;
 }
@@ -7,53 +9,125 @@ body {
   text-align: center;
 }
 
-/* General Desktop Styling */
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid black;
+  padding-block: 2%;
+  padding-inline: 2%;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+header a.mobile {
+  width: 50%;
+}
+
+#hamburger-input {
+  display: none;
+}
+  
+#hamburger-menu {
+  width: 15%;
+  line-height: 0;
+  background: linear-gradient(
+    to bottom,
+    #fff, #fff 15%,
+    #262626 15%, #262626 29%,
+    #fff 29%, #fff 43%,
+    #262626 43%, #262626 57%,
+    #fff 57%, #fff 71%,
+    #262626 71%, #262626 85%,
+    #fff 85%, #fff 100%
+  );
+}
+
+#hamburger-menu #sidebar-menu {
+  visibility: hidden;
+  width: 80vw;
+  height: 100vh;
+  transition: 0.1s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  line-height: calc(1rem + 14vw);
+  background-color: #fff;
+  font-size: calc(1rem + 4vw);
+  text-align: left;
+  padding-inline-start: 10%;
+  border: 1px solid black;
+}
+
+header ul {
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover {
+  filter: contrast(20%);
+}
+
+a:active {
+  filter: contrast(20%) drop-shadow(0.2rem 0.2rem 0.1rem lightcyan);
+}
+
+.desktop {
+  display: none;
+}
+
+/* Desktop General Styling */
 
 @media screen and (min-width: 769px) {
 
   header {
-    border-bottom: 0.2rem solid black;
-    padding-block: 1%;
-    padding-inline-start: 1%;
+    display: revert;
+    padding-block: 0;
   }
-  
-  header nav {
+
+  #main-menu ul {
+    font-family: serif;
+    font-size: calc(1rem + 1.5vw);
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 60%;
-    letter-spacing: 0.3rem;
-    font-size: calc(1rem + 1.5vw);
-    text-transform: uppercase;
+    width: 70%;
   }
   
-  header nav a {
-    text-decoration: none;
-  }
-  
-  header nav a:link,
-  header nav a:visited {
-    color: black;
-  }
-  
-  header nav a:hover {
-    filter: contrast(20%) drop-shadow(0.2rem 0.2rem 0.1rem lightcyan);
-  }
-  
-  header nav a:active {
-    filter: contrast(20%);
-  }
-  
-  header nav a:first-child  {
+  #main-menu li:first-child  {
     flex: 2;
   }
   
-  header nav a:nth-child(n+2):nth-child(-n+3) {
+  #main-menu li:nth-child(n+2):nth-child(-n+3) {
     flex: 0.8;
   }
   
-  header nav .logo {
+  #main-menu .logo {
     max-width: 100%;
+  }
+
+  .desktop {
+    display: revert;
+  }
+
+  .mobile {
+    display: none;
   }
 
 }
