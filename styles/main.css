@@ -133,6 +133,12 @@ a:active {
   display: none;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2%;
+}
+
 /* Desktop General Styling */
 
 @media screen and (min-width: 769px) {
