@@ -1,11 +1,12 @@
-/* index.html Styling */
+/* Mobile First index.html Styling */
 
 #profile-pic {
   display: block;
   padding-block-end: 2%;
   margin-inline: auto;
-  max-width: 100%;
 }
+
+/* Desktop index.html Styling */
 
 @media screen and (min-width: 769px) {
   
@@ -18,7 +19,6 @@
     padding-block-start: 2%;
     padding-block-end: 3%;
     margin-inline: auto;
-    max-width: 100%;
   }
 
 }
