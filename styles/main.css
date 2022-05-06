@@ -73,17 +73,18 @@ header a.mobile {
 }
   
 #hamburger-menu {
-  width: 15%;
+  margin-inline-end: 2%;
+  width: 12%;
   line-height: 0;
   background: linear-gradient(
     to bottom,
-    #fff, #fff 15%,
-    #262626 15%, #262626 29%,
-    #fff 29%, #fff 43%,
-    #262626 43%, #262626 57%,
-    #fff 57%, #fff 71%,
-    #262626 71%, #262626 85%,
-    #fff 85%, #fff 100%
+    transparent, transparent 15%,
+    DarkSlateGray 15%, DarkSlateGray 29%,
+    transparent 29%, transparent 43%,
+    DarkSlateGray 43%, DarkSlateGray 57%,
+    transparent 57%, transparent 71%,
+    DarkSlateGray 71%, DarkSlateGray 85%,
+    transparent 85%, transparent 100%
   );
 }
 
@@ -110,6 +111,21 @@ header ul {
 
 #hamburger-input:checked + #hamburger-menu #sidebar-menu {
   visibility: visible;
+}
+
+#hamburger-input:checked + #hamburger-menu {
+  background: linear-gradient(
+    45deg,
+    transparent, transparent 45%,
+    DarkSlateGray 45%, DarkSlateGray 55%,
+    transparent 55%, transparent 100%
+  ),
+              linear-gradient(
+    135deg,
+    transparent, transparent 45%,
+    DarkSlateGray 45%, DarkSlateGray 55%,
+    transparent 55%, transparent 100%
+  );
 }
 
 a {
