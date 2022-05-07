@@ -1,0 +1,29 @@
+/* Mobile First work.html Styling */
+
+#work h1 {
+  text-align: center;
+}
+
+#work figure,
+#work video,
+#work img {
+  padding-block-end: 6%;
+  margin-block: 0;
+}
+
+#work figcaption {
+  text-align: center;
+  font-family: monospace;
+  font-size: calc(1rem + 0.6vw);
+}
+
+#work audio,
+#work video,
+#work img {
+  margin-inline: auto;
+}
+
+#work figure:last-of-type,
+#work #draft-3 {
+  border-bottom: 2px solid DarkSlateGray;
+}
