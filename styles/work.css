@@ -2,19 +2,20 @@
 
 #work h1 {
   text-align: center;
+  font-weight: normal;
 }
 
 #work figure,
 #work video,
 #work img {
-  padding-block-end: 6%;
+  padding-block-end: 10%;
   margin-block: 0;
 }
 
 #work figcaption {
   text-align: center;
   font-family: monospace;
-  font-size: calc(1rem + 0.6vw);
+  font-size: calc(1rem + 0.4vw);
 }
 
 #work audio,
@@ -23,7 +24,132 @@
   margin-inline: auto;
 }
 
-#work figure:last-of-type,
-#work #draft-3 {
-  border-bottom: 2px solid DarkSlateGray;
+#work #sound,
+#work #design {
+  border-bottom: 1px solid DarkSlateGray;
+}
+
+/* Desktop work.html Styling */
+
+@media screen and (min-width: 1036px) {
+
+  #work h1 {
+    margin-block: 0;
+    padding-block: 3%;
+    text-align: left;
+  }
+
+  #work figure {
+    padding-block: 0;
+    margin-inline: 0;
+    margin-block: 0;
+  }
+
+  #work audio {
+    padding-block-end: 14%;
+    margin-block: 0;
+  }
+
+  #work img,
+  #work video,
+  #work figure  {
+    padding-block: 0;
+    margin-block: auto;
+  }
+
+  #sound {
+    display: grid;
+    grid-template-areas: 
+      "sound sound sound sound sound sound"
+      ". mp3-1 mp3-1 mp3-2 mp3-2 ."
+      "mp3-3 mp3-3 mp3-4 mp3-4 mp3-5 mp3-5"
+      ". mp3-6 mp3-6 mp3-7 mp3-7 .";
+    grid-template-columns: repeat(6, minmax(0,1fr));
+    padding-block-end: 5%;
+    column-gap: 10%;
+  }
+
+  #work #sound h1 {
+    grid-area: sound;
+  }
+
+  #work #sound #mp3-1 {
+    grid-area: mp3-1;
+  }
+
+  #work #sound #mp3-2 {
+    grid-area: mp3-2;
+  }
+
+  #work #sound #mp3-3 {
+    grid-area: mp3-3;
+  }
+
+  #work #sound #mp3-4 {
+    grid-area: mp3-4;
+  }
+
+  #work #sound #mp3-5 {
+    grid-area: mp3-5;
+  }
+
+  #work #sound #mp3-6 {
+    grid-area: mp3-6;
+  }
+
+  #work #sound #mp3-7 {
+    grid-area: mp3-7;
+  }
+
+  #work #design {
+    display: grid;
+    grid-template-areas: 
+      "design design design"
+      "draft-1 draft-2 draft-3";
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    padding-block-end: 5%;
+    column-gap: 1%;
+  }
+
+  #work #design h1 {
+    grid-area: design;
+  }
+
+  #work #design #draft-1 {
+    grid-area: draft-1;
+  }
+
+  #work #design #draft-2 {
+    grid-area: draft-2;
+  }
+
+  #work #design #draft-3 {
+    grid-area: draft-3;
+  }
+
+  #work #art {
+    display: grid;
+    grid-template-areas: 
+      "art art art"
+      "art-1 art-2 art-3";
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    padding-block-end: 5%;
+    column-gap: 1%;
+  }
+
+  #work #art h1 {
+    grid-area: art;
+  }
+
+  #work #art #art-1 {
+    grid-area: art-1;
+  }
+
+  #work #art #art-2 {
+    grid-area: art-2;
+  }
+
+  #work #art #art-3 {
+    grid-area: art-3;
+  }
 }
