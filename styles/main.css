@@ -47,21 +47,13 @@ body {
   text-align: center;
 }
 
-img {
-  max-width: 100%;
-}
-
 header {
-  font-family: vollkorn_sc, serif;
-  font-weight: bold;
-  font-style: normal;
   display: flex;
   justify-content: space-between;
   border-bottom: 0.1rem solid black;
   padding-block: 2%;
   padding-inline: 2%;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
 }
 
 header a.mobile {
@@ -165,6 +157,34 @@ footer {
   border-top: 1px solid black;
 }
 
+header,
+h1,
+h2,
+h3 {
+  font-family: vollkorn_sc, serif;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.3rem;
+}
+
+h1,
+h2,
+h3 {
+  font-size: calc(1rem + 4vw);
+}
+
+img {
+  max-width: 100%;
+}
+
+video {
+  max-width: 100%;
+}
+
+.block {
+  display: block;
+}
+
 /* Desktop General Styling */
 
 @media screen and (min-width: 769px) {
@@ -183,9 +203,8 @@ footer {
     margin-block: 0;
   }
 
-  #main-menu .logo {
+  #main-menu #logo-desktop {
     max-width: 70%;
-    display: block;
   }
 
   #main-menu ul:nth-child(2) {
