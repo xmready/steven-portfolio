@@ -1,5 +1,9 @@
 /* Mobile First index.html Styling */
 
+#statement {
+  text-indent: 3%;
+}
+
 #profile-pic {
   display: block;
   padding-block-end: 2%;
