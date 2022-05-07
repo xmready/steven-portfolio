@@ -51,10 +51,8 @@
   }
 
   #work img,
-  #work video,
-  #work figure  {
+  #work video {
     padding-block: 0;
-    margin-block: auto;
   }
 
   #sound {

@@ -130,11 +130,11 @@ a:visited {
 }
 
 a:hover {
-  filter: contrast(20%);
+  filter: contrast(50%) drop-shadow(0.1rem 0.1rem 0.06rem DarkSlateGray);
 }
 
 a:active {
-  filter: contrast(20%) drop-shadow(0.1rem 0.1rem 0.06rem DarkSlateGray);
+  filter: contrast(20%);
 }
 
 .desktop {
