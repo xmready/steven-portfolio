@@ -158,7 +158,7 @@ footer {
 }
 
 footer p {
-  padding: calc(1rem + 0.05vw);
+  padding: 0.9rem;
 }
 
 footer a:last-child p {
@@ -232,7 +232,7 @@ video {
   }
   
   footer {
-    padding-inline: 2%;
+    padding-inline: 4%;
   }
 
   .desktop {
