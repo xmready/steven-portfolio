@@ -158,7 +158,12 @@ footer {
 }
 
 footer p {
-  padding: 1%;
+  padding: calc(1rem + 0.2vw);
+}
+
+footer a:last-child p {
+  border: 1px solid black;
+  border-radius: 100%;
 }
 
 header,
