@@ -8,6 +8,7 @@
 
 #resume-download {
   margin-block-end: 2%;
+  text-align: center;
 }
 
 @media screen and (min-width: 769px) {
@@ -19,7 +20,6 @@
 
   #resume-download {
     margin-block-end: 3%;
-    text-align: center;
   }
   
   #resume-download a:link {
