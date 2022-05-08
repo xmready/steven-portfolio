@@ -153,8 +153,12 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 2%;
+  padding-inline: 6%;
   border-top: 1px solid black;
+}
+
+footer p {
+  padding: 1%;
 }
 
 header,
@@ -194,6 +198,10 @@ video {
     padding-block: 1%;
   }
 
+  main {
+    padding-inline: 10%;
+  }
+
   #main-menu div {
     display: flex;
   }
@@ -217,6 +225,10 @@ video {
   #main-menu ul:nth-child(2) li {
     padding-inline-start: 6%;
   }
+  
+  footer {
+    padding-inline: 2%;
+  }
 
   .desktop {
     display: revert;
@@ -224,10 +236,6 @@ video {
 
   .mobile {
     display: none;
-  }
-
-  main {
-    padding-inline: 10%;
   }
 
 }
