@@ -1,17 +1,36 @@
 /* Mobile First Resume Styling */
 
 #resume {
-  margin-block: 2%;
-  display: block;
+  margin-block-start: 2%;
   margin-inline: auto;
+  border: 1px solid black;
+}
+
+#resume-download {
+  margin-block-end: 2%;
 }
 
 @media screen and (min-width: 769px) {
 
   #resume {
-    margin-block: 3%;
-    display: block;
+    margin-block-start: 3%;
     margin-inline: auto;
   }
 
+  #resume-download {
+    margin-block-end: 3%;
+    text-align: center;
+  }
+  
+  #resume-download a:link {
+    color: blue;
+  }
+  
+  #resume-download a:visited {
+    color: purple;
+  }
+  
+  #resume-download a:hover {
+    text-decoration: underline;
+  }
 }
