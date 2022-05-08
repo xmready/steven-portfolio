@@ -158,11 +158,11 @@ footer {
 }
 
 footer p {
-  padding: calc(1rem + 0.2vw);
+  padding: calc(1rem + 0.05vw);
 }
 
 footer a:last-child p {
-  border: 1px solid black;
+  border: 1px dashed black;
   border-radius: 100%;
 }
 
