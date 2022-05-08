@@ -94,6 +94,7 @@ header a.mobile {
   text-align: left;
   padding-inline-start: 10%;
   border: 1px solid black;
+  overflow: auto;
 }
 
 header ul {
