@@ -56,7 +56,7 @@ header {
 }
 
 header a.mobile {
-  width: 65%;
+  width: 60%;
 }
 
 #hamburger-input {
@@ -79,21 +79,10 @@ header a.mobile {
   );
 }
 
-#hamburger-menu #sidebar-menu {
-  visibility: hidden;
-  width: 80vw;
-  height: 100%;
-  transition: 0.1s;
+#sidebar-menu {
+  display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  line-height: calc(1rem + 10vw);
-  background-color: #fff;
-  font-size: calc(1rem + 3.5vw);
-  text-align: left;
-  padding-inline-start: 10%;
-  border: 1px solid black;
-  overflow: auto;
+  left: -1000px;
 }
 
 header ul {
@@ -101,8 +90,20 @@ header ul {
   list-style-type: none;
 }
 
-#hamburger-input:checked + #hamburger-menu #sidebar-menu {
-  visibility: visible;
+#hamburger-input:checked + #hamburger-menu + #sidebar-menu {
+  display: block;
+  width: 65vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  line-height: calc(1rem + 10vw);
+  background-color: #fff;
+  font-size: calc(1rem + 3.5vw);
+  text-align: left;
+  padding-inline-start: 15%;
+  border: 1px solid black;
+  overflow: auto;
 }
 
 #hamburger-input:checked + #hamburger-menu {
@@ -129,9 +130,12 @@ a:visited {
   color: black;
 }
 
-a:hover,
-#hamburger-input #hamburger-menu:hover {
+a:hover {
   filter: contrast(50%) drop-shadow(0.1rem 0.1rem 0.06rem DarkSlateGray);
+}
+
+#hamburger-menu:hover {
+  border-radius: 100%;
 }
 
 a:active {
@@ -196,7 +200,7 @@ video {
 
 /* Desktop General Styling */
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1500px) {
 
   header {
     display: revert;
