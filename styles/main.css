@@ -63,7 +63,8 @@ header a.mobile {
   display: none;
 }
   
-#hamburger-menu {
+#hamburger-input + #hamburger-menu {
+  border-radius: 100%;
   margin-inline-end: 2%;
   width: 12%;
   line-height: 0;
@@ -77,6 +78,7 @@ header a.mobile {
     DarkSlateGray 65%, DarkSlateGray 75%,
     transparent 75%, transparent 100%
   );
+  transition: 0.5s;
 }
 
 #sidebar-menu {
@@ -135,7 +137,11 @@ a:hover {
 }
 
 #hamburger-menu:hover {
-  border-radius: 100%;
+  filter: contrast(20%) drop-shadow(0.2rem 0.2rem 0.06rem DarkSlateGray);
+}
+
+#hamburger-menu:active {
+  filter: contrast(70%);
 }
 
 a:active {
