@@ -78,7 +78,7 @@ header a.mobile {
     DarkSlateGray 65%, DarkSlateGray 75%,
     transparent 75%, transparent 100%
   );
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 #sidebar-menu {
@@ -133,7 +133,7 @@ a:visited {
 }
 
 a:hover {
-  filter: contrast(50%) drop-shadow(0.1rem 0.1rem 0.06rem DarkSlateGray);
+  filter: contrast(30%) drop-shadow(0.2rem 0.2rem 0.14rem DarkSlateGray);
 }
 
 #hamburger-menu:hover {
@@ -145,7 +145,7 @@ a:hover {
 }
 
 a:active {
-  filter: contrast(20%);
+  filter: contrast(50%);
 }
 
 .desktop {
@@ -215,6 +215,10 @@ video {
 
   main {
     padding-inline: 10%;
+  }
+
+  #hamburger-input:checked + #hamburger-menu + #sidebar-menu {
+    display: none;
   }
 
   #main-menu div {
