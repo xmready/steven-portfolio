@@ -55,6 +55,10 @@ header {
   text-transform: uppercase;
 }
 
+header a {
+  transition: 0.3s;
+}
+
 header a.mobile {
   width: 60%;
 }
