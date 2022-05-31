@@ -129,7 +129,8 @@ a:visited {
   color: black;
 }
 
-a:hover {
+a:hover,
+#hamburger-input #hamburger-menu:hover {
   filter: contrast(50%) drop-shadow(0.1rem 0.1rem 0.06rem DarkSlateGray);
 }
 
