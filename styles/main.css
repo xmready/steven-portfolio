@@ -69,13 +69,13 @@ header a.mobile {
   line-height: 0;
   background: linear-gradient(
     to bottom,
-    transparent, transparent 15%,
-    DarkSlateGray 15%, DarkSlateGray 29%,
-    transparent 29%, transparent 43%,
-    DarkSlateGray 43%, DarkSlateGray 57%,
-    transparent 57%, transparent 71%,
-    DarkSlateGray 71%, DarkSlateGray 85%,
-    transparent 85%, transparent 100%
+    transparent, transparent 25%,
+    DarkSlateGray 25%, DarkSlateGray 35%,
+    transparent 35%, transparent 45%,
+    DarkSlateGray 45%, DarkSlateGray 55%,
+    transparent 55%, transparent 65%,
+    DarkSlateGray 65%, DarkSlateGray 75%,
+    transparent 75%, transparent 100%
   );
 }
 
