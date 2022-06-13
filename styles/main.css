@@ -51,12 +51,12 @@ header {
   justify-content: space-between;
   border-bottom: 0.1rem solid black;
   padding-block: 2%;
-  padding-inline: 2%;
+  padding-inline: 6%;
   text-transform: uppercase;
 }
 
 header a {
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 header a.mobile {
@@ -82,11 +82,11 @@ header a.mobile {
     DarkSlateGray 65%, DarkSlateGray 75%,
     transparent 75%, transparent 100%
   );
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 #sidebar-menu {
-  display: none;
+  visibility: hidden;
   position: fixed;
   left: -1000px;
 }
@@ -97,9 +97,9 @@ header ul {
 }
 
 #hamburger-input:checked + #hamburger-menu + #sidebar-menu {
-  display: block;
+  visibility: visible;
   width: 65vw;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -137,19 +137,19 @@ a:visited {
 }
 
 a:hover {
-  filter: contrast(30%) drop-shadow(0.2rem 0.2rem 0.14rem DarkSlateGray);
+  filter: contrast(55%) drop-shadow(0.1rem 0.1rem 0.12rem DarkSlateGray);
 }
 
 #hamburger-menu:hover {
-  filter: contrast(20%) drop-shadow(0.2rem 0.2rem 0.06rem DarkSlateGray);
+  filter: contrast(30%);
 }
 
 #hamburger-menu:active {
-  filter: contrast(70%);
+  filter: contrast(20%);
 }
 
 a:active {
-  filter: contrast(50%);
+  filter: contrast(20%);
 }
 
 .desktop {
@@ -210,7 +210,7 @@ video {
 
 /* Desktop General Styling */
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1440px) {
 
   header {
     display: revert;
@@ -218,7 +218,7 @@ video {
   }
 
   main {
-    padding-inline: 10%;
+    padding-inline: 15%;
   }
 
   #hamburger-input:checked + #hamburger-menu + #sidebar-menu {
@@ -239,7 +239,7 @@ video {
   }
 
   #main-menu ul:nth-child(2) {
-    font-size: calc(1rem + 1.5vw);
+    font-size: calc(1rem + 1.7vw);
     display: flex;
     align-items: center;
     justify-content: flex-end;
